@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FilmsModelStoreContainer" CdmEntityContainer="FilmsEntities">
+    <EntitySetMapping Name="Cards">
+      <EntityTypeMapping TypeName="FilmsModel.Card">
+        <MappingFragment StoreEntitySet="Card">
+          <ScalarProperty Name="CardId" ColumnName="CardId" />
+          <ScalarProperty Name="ListID" ColumnName="ListID" />
+          <ScalarProperty Name="CreatDate" ColumnName="CreatDate" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lists">
+      <EntityTypeMapping TypeName="FilmsModel.List">
+        <MappingFragment StoreEntitySet="List">
+          <ScalarProperty Name="ListId" ColumnName="ListId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
